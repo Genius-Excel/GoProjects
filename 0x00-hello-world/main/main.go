@@ -25,8 +25,8 @@ func main() {
 		fmt.Println(my_array[i])
 	}
 
-	fmt.Printf("Antoehr type of loop with index")
-	for _, value := range my_array {
-		fmt.Printf("%v\n", value)
-	}
+	// fmt.Printf("Antoehr type of loop with index")
+	// for value := range len(my_array)  {
+	// 	fmt.Printf("%v\n", my_array[value])
+	// }
 }
