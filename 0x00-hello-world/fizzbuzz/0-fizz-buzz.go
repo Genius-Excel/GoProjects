@@ -12,17 +12,20 @@ func Fizzbuuz(num int) ([]string, []int) {
 
 	// Loop through the integer arguament provided.
 	for i := 0; i <= num; i++ {
+		string_element := ""
+
 		if num%3 == 0 && num%5 == 0 {
-			str_slice = append(str_slice, "FizzBuzz")
-			num_slice = append(num_slice, i)
-		} else if num%5 == 0 {
-			str_slice = append(str_slice, "Buzz")
-			num_slice = append(num_slice, i)
-		} else if num%3 == 0 {
-			str_slice = append(str_slice, "Fizz")
-			num_slice = append(num_slice, i)
+			string_element = "Fizzbuzz"
+		}
+		if num%5 == 0 {
+			string_element = "Buzz"
+		}
+		if num%3 == 0 {
+			string_element = "Fizz"
 		}
 
+		str_slice = append(str_slice, string_element)
+		num_slice = append(num_slice, i)
 	}
 
 	return str_slice, num_slice
