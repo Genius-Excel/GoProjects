@@ -14,19 +14,11 @@ func main() {
 	positivenegative.Postive_Negative()
 	fmt.Println("Fizz Buzz Question")
 
-	result := fizzbuzz.Fizzbuuz(30)
+	str_result, num_idx_result := fizzbuzz.Fizzbuuz(30)
 
-	fmt.Println(result)
+	// fmt.Println(result)
 
-	// Tesiting how Arrays work
-	my_array := [...]int{5, 8, 9, 0}
-
-	for i := 0; i < len(my_array); i++ {
-		fmt.Println(my_array[i])
+	for i := 0; i < len(num_idx_result); i++ {
+		fmt.Printf("%v: %v", num_idx_result[i], str_result[i])
 	}
-
-	// fmt.Printf("Antoehr type of loop with index")
-	// for value := range len(my_array)  {
-	// 	fmt.Printf("%v\n", my_array[value])
-	// }
 }
