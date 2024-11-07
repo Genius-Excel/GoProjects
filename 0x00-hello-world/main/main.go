@@ -18,4 +18,15 @@ func main() {
 
 	fmt.Println(result)
 
+	// Tesiting how Arrays work
+	my_array := [...]int{5, 8, 9, 0}
+
+	for i := 0; i < len(my_array); i++ {
+		fmt.Println(my_array[i])
+	}
+
+	fmt.Printf("Antoehr type of loop with index")
+	for _, value := range my_array {
+		fmt.Printf("%v\n", value)
+	}
 }
